@@ -9,10 +9,8 @@ import Header from './Pages/Header/Header'
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Services from './Pages/Home/Services/Services';
-import Register from './Pages/Register/register';
 import About from './Pages/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
-// import Umrah from './Pages/Umrah/Umrah';
 import Contact from './Pages/Contact/Contact';
 
 function App() {
@@ -41,9 +39,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/register">
-             <Register></Register>
-            </Route>
+          
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
@@ -54,27 +50,7 @@ function App() {
           <Footer></Footer>
         </Router>
       </AuthProvider>
-      {/* <BrowserRouter>
-      <Header></Header>
-            <Switch>
-<Route exact path="/">
-  <Home></Home>
-</Route>
-
-<Route path="/home">
-  <Home></Home>
-</Route>
-<Route path="/About">
-  <About></About>
-</Route>
-<Route path="/umrah">
-  <Umrah></Umrah>
-</Route>
-<Route path="/contact">
-  <Contact></Contact>
-</Route>
-            </Switch>
-            </BrowserRouter> */}
+    
     </div>
   );
 }
