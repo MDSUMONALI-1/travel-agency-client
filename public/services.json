@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "General dentistry",
+        "description": "General dentistry looks at the health of the gums, the mouth, the teeth themselves, and has a variety of services intended to fix and prevent issues from arising. We offer children’s dental care, preventative care, gum disease treatment, wisdom teeth removal and many others.",
+        "img": "https://i.ibb.co/ZMbyQhB/dental-intro.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Cosmetic Dentistry",
+        "description": "Whether you have chipped, discoulored, gapped or crooked teeth, we have beautiful solutions to get you the smile of your dreams. Our dentists will help you choose the best procedure for your particular concerns. We feature Invisalign®, teeth whitening and veneers.",
+        "img": "https://i.ibb.co/mNnS1hs/quality-dentist-sheffield.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Restorative Dentistry",
+        "description": "Your smile is your best accessory. If you have damaged or missing teeth, however, you may be reluctant to show it off. We feature many restorative services that can help you love your smile again. These include crowns, bridges, dentures, dental fillings and dental implants.",
+        "img": "https://i.ibb.co/QXqV4YY/Scared-Dentist-Patient.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Orthodontics",
+        "description": "Straighten your smile using Artarmon Dentists’ advanced teeth straightening techniques. Dr Radhika is highly trained in orthodontics including Invisalign, traditional braces, and specifically children’s orthodontics such as Myobrace therapy. Learn more or contact us for a consutlation.",
+        "img": "https://i.ibb.co/JBFNJ7W/dental.jpg" }
+        ,
+    {
+        "id": 5,
+        "name": "Children teeth surgery",
+        "description": "General dentistry looks at the health of the gums, the mouth, the teeth themselves, and has a variety of services intended to fix and prevent issues from arising. We offer children’s dental care, preventative care, gum disease treatment, wisdom teeth removal and many others.",
+        "img": "https://i.ibb.co/ZMbyQhB/dental-intro.jpg"
+    },
+    {
+        "id": 6,
+        "name": "ROOT Cannel",
+        
+        "description": "General dentistry looks at the health of the gums, the mouth, the teeth themselves, and has a variety of services intended to fix and prevent issues from arising. We offer children’s dental care, preventative care, gum disease treatment, wisdom teeth removal and many others.",
+        "img": "https://forestbrookdental.com/wp-content/uploads/sites/15/2016/11/pm-0216-med-img_0163-746.jpg" }
+]
