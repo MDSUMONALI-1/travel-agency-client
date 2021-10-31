@@ -3,7 +3,6 @@ import './App.css';
 import Home from './Pages/Home/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NotFound from './Pages/NotFound/NotFound';
-import Booking from './Pages/Booking/Booking/Booking';
 import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Header/Header'
 import AuthProvider from './contexts/AuthProvider';
@@ -12,11 +11,12 @@ import Services from './Pages/Home/Services/Services';
 import About from './Pages/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
 import Contact from './Pages/Contact/Contact';
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
     <div className="App">
-      <h2>wellcome to client site</h2>
+      <h2>wellcome to Dhaka Travel Agaency</h2>
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -39,10 +39,12 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-          
-            <PrivateRoute path="/booking/:serviceId">
-              <Booking></Booking>
+            <PrivateRoute path="/placeorder/:serviceId">
+            <PlaceOrder></PlaceOrder>
             </PrivateRoute>
+            {/* <PrivateRoute path="/booking/:serviceId">
+              <Booking></Booking>
+            </PrivateRoute> */}
             <Route path="*">
               <NotFound></NotFound>
             </Route>

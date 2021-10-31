@@ -10,7 +10,7 @@ const Service = ({ service }) => {
             <img src={img} alt="" />
             <h3>{name}</h3>
             <p className="px-5">{description}</p>
-            <Link to={`/booking/${name}`}>
+            <Link to={`/placeorder/${name}`}>
                 <button className="btn btn-danger">Book {name}</button>
             </Link>
         </div>
