@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     // const {service} = props;
-    const { name,description, img } = service;
+    const {_id, name,description, img } = service;
     return (
         <div className="service pb-3">
             <img src={img} alt="" />
             <h3>{name}</h3>
             <p className="px-5">{description}</p>
-            <Link to={`/placeorder/${name}`}>
+            <Link to={`/placeorder/${_id}`}>
                 <button className="btn btn-danger">Book {name}</button>
             </Link>
         </div>

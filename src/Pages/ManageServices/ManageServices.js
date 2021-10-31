@@ -2,8 +2,8 @@ import React,{useState, useEffect} from 'react';
 
 const ManageServices = () => {
     const [services,setServices] = useState([])
-useEffect( () =>{
-    fetch('')
+useEffect( () => {
+    fetch(`https://secret-harbor-38071.herokuapp.com/services`)
     .then(res=>res.json())
     .then(data => setServices(data))
 },[])
@@ -15,7 +15,7 @@ const handleDelete = id => {
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        console.log(data);
     })
 }
 
