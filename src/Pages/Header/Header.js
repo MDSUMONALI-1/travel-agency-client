@@ -13,8 +13,8 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Link  to="/home">Home</Link>
                         <Link to="/about">About</Link>
-                        <Link   to="/services">umrah</Link>
-                        <Link  to="/contact">contact</Link>
+                        <Link   to="/services">Umrah-pakages</Link>
+                        <Link  to="/contact">Contact-US</Link>
                         
                         {user?.email ?
                             <Button onClick={logOut} variant="light">Logout</Button> :
