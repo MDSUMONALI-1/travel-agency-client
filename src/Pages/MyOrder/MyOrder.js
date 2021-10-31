@@ -8,18 +8,23 @@ useEffect( () => {
     .then(data => setServices(data))
 },[])
 
-const handleDelete = id => {
-    const url =`https://secret-harbor-38071.herokuapp.com/services/${id}`;
-    fetch(url ,{
-        method:'DELETE'
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-    })
+const handleDelete = id =>  {
+    const proceed = window.confirm('Are you sure, you want to delete?');
+    if (proceed) {
+        const url = `http://localhost:5000/users/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount > 0) {
+                    alert('deleted successfully');
+                    const remaining = services.filter(service => service._id !== id);
+                    setServices(remaining);
+                }
+            });
+    }
 }
-
-
 
     return (
         <div>
