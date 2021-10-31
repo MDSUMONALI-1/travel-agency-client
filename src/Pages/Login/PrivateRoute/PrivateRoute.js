@@ -8,6 +8,7 @@ const PrivateRoute = ({ children, ...rest }) => {
     if (isLoading) {
         return <Spinner animation="border" variant="danger" />
     }
+    
     return (
         <Route
             {...rest}

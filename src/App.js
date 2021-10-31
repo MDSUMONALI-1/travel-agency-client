@@ -12,6 +12,7 @@ import About from './Pages/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
 import Contact from './Pages/Contact/Contact';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -42,9 +43,9 @@ function App() {
             <PrivateRoute path="/placeorder/:serviceId">
             <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            {/* <PrivateRoute path="/booking/:serviceId">
-              <Booking></Booking>
-            </PrivateRoute> */}
+            <Route path="manageservice">
+              <ManageServices></ManageServices>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
