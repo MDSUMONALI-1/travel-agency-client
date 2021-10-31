@@ -44,9 +44,9 @@ function App() {
             <PrivateRoute path="/placeorder/:serviceId">
             <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            <Route path="myorder">
+            <PrivateRoute path="/myorder">
               <MyOrder></MyOrder>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
