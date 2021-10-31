@@ -12,7 +12,8 @@ import About from './Pages/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
 import Contact from './Pages/Contact/Contact';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
-import ManageServices from './Pages/ManageServices/ManageServices';
+import MyOrder from './Pages/MyOrder/MyOrder';
+
 
 function App() {
   return (
@@ -43,8 +44,8 @@ function App() {
             <PrivateRoute path="/placeorder/:serviceId">
             <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            <Route path="manageservice">
-              <ManageServices></ManageServices>
+            <Route path="myorder">
+              <MyOrder></MyOrder>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
